@@ -1,0 +1,9 @@
+dic={
+    "turkey":90,
+    "germany":70,
+    "england":83,
+    "spaing":16,
+    "italy":54
+}
+print(dic.keys())
+print(dic.values())
