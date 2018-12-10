@@ -19,6 +19,7 @@ array1=np.array( [
 ])
 print("shape : ",array1.shape)
 print(array1)
+
 print("zero_array ---------------------------------")
 zero_array=np.zeros((2,5))
 print("shaep : ",zero_array)
