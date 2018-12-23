@@ -23,7 +23,6 @@ print(dataFrame1.info())
 
 print("get column data type ********************************************************")
 
-print(dataFrame1.dtypes)
-
-print(dataFrame1.describe())                # numeric feature = columns (age,maas)
-print(dataFrame1.count())                   # get all column's count
+print(dataFrame1.dtypes)             # get type of columns
+print(dataFrame1.describe())         # numeric feature = columns (age,maas)
+print(dataFrame1.count())            # get all column's count
