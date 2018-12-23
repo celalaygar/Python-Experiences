@@ -9,20 +9,19 @@ dictionary = {"NAME":["ali","cengiz","kavlak","veli","kenan silah","hilal mert",
 
 dataFrame1 = pd.DataFrame(dictionary)
 
-
 print("Get Coloumn********************************************************")
 print(dataFrame1.columns)           # get all column's name
 print(dataFrame1.keys())            # get all column's name
+
 print("Get specific data********************************************************")
 print(dataFrame1.get("NAME"))       # get all  names
 print(dataFrame1.get("AGE"))        # get all  ages
 print(dataFrame1.get("SALARY"))     # get all  salary
+
 print("*get info *******************************************************")
 print(dataFrame1.info())
 
-
 print("get column data type ********************************************************")
-
 print(dataFrame1.dtypes)             # get type of columns
 print(dataFrame1.describe())         # numeric feature = columns (age,maas)
 print(dataFrame1.count())            # get all column's count
