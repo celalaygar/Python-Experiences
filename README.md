@@ -3,8 +3,7 @@
 ``` 
 - using githup rest api via response with python
 - open camera with opencv
-- using map with python
-- using numpy with python
+- using numpy, map, reduce, list, zip with python
 - using pandas, pandas dataframe with python
 - how to use list and dictionary with python
 ``` 
