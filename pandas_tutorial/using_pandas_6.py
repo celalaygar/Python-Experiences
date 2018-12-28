@@ -29,10 +29,10 @@ print(dataFrame1.result)                # get all age as 2 x age
 
 
 def multiply(age):
-    return age * 2
+    return age * 3
 
 dataFrame1["multiply"] = dataFrame1.SALARY.apply(multiply)
-print(dataFrame1.multiply)
+print(dataFrame1.multiply)                # get all age as 3 x SALARY
 
 
 result=dataFrame1.columns = [ each.lower() for each in dataFrame1.columns]
