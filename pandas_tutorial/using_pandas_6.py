@@ -6,7 +6,7 @@ dictionary = {"NAME":["ali","cengiz","kavlak","veli","kenan silah","hilal mert",
                 "SALARY": [100,110,133,143,150,220,231,240,350]}
 
 dataFrame1 = pd.DataFrame(dictionary)
-print(dataFrame1.columns)               #Index(['NAME', 'AGE', 'SALARY'], dtype='object
+print(dataFrame1.columns)               # Index(['NAME', 'AGE', 'SALARY'], dtype='object
 print(len(dataFrame1.NAME[2]))          # 6
 print(len(dataFrame1.NAME[7]))          # 11
 print(len(dataFrame1.NAME[5]))          # 10
@@ -27,13 +27,17 @@ print(age)                              # get all age
 dataFrame1["result"] = [ each*2 for each in dataFrame1.AGE]
 print(dataFrame1.result)                # get all age as 2 x age
 
+print(len(dataFrame1.columns))          # 4
+print(len(dataFrame1.keys()))           # 4
 
-def multiply(age):
-    return age * 3
+def multiply(x):
+    return x * 3
 
 dataFrame1["multiply"] = dataFrame1.SALARY.apply(multiply)
 print(dataFrame1.multiply)                # get all age as 3 x SALARY
+print(len(dataFrame1.columns))            # 5
+print(len(dataFrame1.keys()))             # 5
 
 
 result=dataFrame1.columns = [ each.lower() for each in dataFrame1.columns]
-print(result)                           # ['name', 'age', 'salary']
+print(result)                           # ['name', 'age', 'salary', 'result', 'multiply']
