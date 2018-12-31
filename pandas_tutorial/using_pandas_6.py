@@ -29,6 +29,7 @@ print(dataFrame1.result)                # get all age as 2 x age
 
 print(len(dataFrame1.columns))          # 4
 print(len(dataFrame1.keys()))           # 4
+print(dataFrame1.keys())                # Index(['NAME', 'AGE', 'SALARY', 'result'], dtype='object')
 
 def multiply(x):
     return x * 3
@@ -37,6 +38,7 @@ dataFrame1["multiply"] = dataFrame1.SALARY.apply(multiply)
 print(dataFrame1.multiply)                # get all age as 3 x SALARY
 print(len(dataFrame1.columns))            # 5
 print(len(dataFrame1.keys()))             # 5
+print(dataFrame1.keys())                  # Index(['NAME', 'AGE', 'SALARY', 'result', 'multiply'], dtype='object')
 
 
 result=dataFrame1.columns = [ each.lower() for each in dataFrame1.columns]
